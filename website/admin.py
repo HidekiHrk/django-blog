@@ -2,7 +2,8 @@ from django.contrib import admin
 from .models import Post
 # Register your models here.
 
-admin.site.site_header = 'CMS HidekiHrk'
+admin.site.site_header = 'CMS Blog'
+admin.site.site_title = 'CMS Blog'
 
 
 class PostAdmin(admin.ModelAdmin):
