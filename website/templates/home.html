@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Posts:</h1>
+    {% for post in posts %}
+        <article>
+            <h3>{{ post.title|title }}</h3>
+            <p>{{ post.sub_title }}</p>
+            <a href="{% url 'posts' slug=post.slug %}">Acessar</a>
+        </article>
+    {% endfor %}
+</body>
+</html>
